@@ -5,7 +5,7 @@ ore-hq-client --url ws://ore.tw-pool.com:5487/mine mine --username SOLANA_ADDRES
 
 To see your status , copy the following address and replace SOLANA_ADDRESS with your actual wallet
 
-https://www.tw-pool.com/workers_eng/YOUR_SOLANA_ADDRESS
+https://www.tw-pool.com/workers/YOUR_SOLANA_ADDRESS
 
 To mine on hive:
 download the latest hiveos miner file(the one with tar.gz) and add custom miner , put the following line in the "Extra config  arguments"
