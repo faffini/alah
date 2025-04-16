@@ -1,10 +1,8 @@
 This miner is forked from ore-hq-miner
 
 To connect , download the miner and run
-ore:
 ore-hq-client --url ws://ore.tw-pool.com:5487/mine mine --username SOLANA_ADDRESS.WORKER_NAME --cores 32
-bitz:
-ore-hq-client --url ws://bitz.tw-pool.com:6487/mine mine --username SOLANA_ADDRESS.WORKER_NAME --cores 32
+If you want to mine bitz , change port 5487 to 6487
 
 To see your status , copy the following address and replace SOLANA_ADDRESS with your actual wallet
 
@@ -17,10 +15,8 @@ download the latest hiveos miner file(the one with tar.gz) and add custom miner 
 
 使用方式:
 下載對應的ubuntu版本,然後執行
-ore:
 ore-hq-client --url ws://ore.tw-pool.com:5487/mine mine --username 錢包地址.機器名稱 --cores 32
-bitz:
-ore-hq-client --url ws://bitz.tw-pool.com:6487/mine mine --username 錢包地址.機器名稱 --cores 32
+如果要挖bitz, 把5487改成6487
 
 在網頁上看狀態: https://www.tw-pool.com/workers/錢包地址
 
