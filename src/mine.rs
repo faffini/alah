@@ -166,7 +166,7 @@ pub async fn mine(args: MineArgs, url: String , username: String)  {
                     match msg {
                         ServerMessage::StartMining(challenge, nonce_range, cutoff) => {
                             *last_activity_clone.lock().await = Instant::now();
-                            println!("Received start mining message , Nonce range: {} - {}", nonce_range.start, nonce_range.end);
+                            println!("Received start message , Nonce range: {} - {}", nonce_range.start, nonce_range.end);
                             let hash_timer = Instant::now();
                             let nonces_per_thread = 10_000;
 
@@ -259,7 +259,7 @@ pub async fn mine(args: MineArgs, url: String , username: String)  {
 
                             let hash_time = hash_timer.elapsed();
 
-                            println!("Found best diff: {} , Processed:{} , Hash time:{:?} , Hashrate:{:.3} k", best_difficulty,total,hash_time , ((total as f32)/hash_time.as_secs_f32())/1000.0 );
+                            println!("Found: {} , p:{} , time:{:?} , rate:{:.3} k", best_difficulty,total,hash_time , ((total as f32)/hash_time.as_secs_f32())/1000.0 );
 
                             let message_type =  2u8; // 1 u8 - BestSolution Message
                             let best_hash_bin = best_hash.d; // 16 u8
